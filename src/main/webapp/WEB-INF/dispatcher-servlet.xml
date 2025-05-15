@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans >
+    <mvc:annotation-driven />
+
+    <!-- Quét các component trong package controller -->
+    <context:component-scan base-package="controller" />
+
+    <!-- View Resolver dùng JSP -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/" />   <!-- thư mục chứa JSP -->
+        <property name="suffix" value=".jsp" />             <!-- phần mở  rộng file -->
+    </bean>
+
+</beans>
